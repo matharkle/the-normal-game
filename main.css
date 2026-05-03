@@ -1,0 +1,216 @@
+* {box-sizing: border-box;}
+
+img {max-width: 100%;}
+
+a:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #292a4c;
+    font-family: argent-pixel-cf, sans-serif;
+}
+
+.header {
+    margin: 25px 50px;
+    /* padding: 10px; */
+    /* background-color: #99b9ba; */
+    text-align: center;
+    /* border-radius: 10px; */
+    /* box-shadow: inset #526c84 3px 3px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    max-width: 200px;
+    min-width: 100px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.menu-bar {
+    display: flex;
+    gap: 15px;
+    height: 30px;
+}
+
+.help {
+    padding: 5px 8px;
+    background-color: #99b9ba;
+    box-shadow: #526c84 3px 3px;
+    font-family: argent-pixel-cf, sans-serif;
+    height: fit-content;
+}
+
+.help:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.main {
+    background-color: #99b9ba;
+    margin: 0px 50px;
+    padding: 100px;
+    padding-top: 200px;
+    height: 80vh;
+    overflow-y: scroll;
+    /* border-radius: 15px; */
+    box-shadow: inset #526c84 3px 3px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.spacer {
+    height: 200px;
+}
+
+.spacer-small {
+    height: 100px;
+}
+
+.title {
+    max-height: 40vh;
+}
+
+button {
+    border: 0;
+}
+
+.none {
+    background-color: inherit;
+    color: #292a4c;
+}
+
+.button {
+    padding: 5px 8px;
+    background-color: #ffffff;
+    box-shadow: #526c84 3px 3px;
+    outline: none;
+    font-family: argent-pixel-cf, sans-serif;
+    /* height: 26px; */
+}
+
+.button:hover {
+    background-color: lightgray;
+    /* box-shadow: none; */
+    cursor: pointer;
+}
+
+.game {
+    width: 80vw;
+    max-width: 850px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.start {
+    background-color: white;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 12px;
+    /* border-radius: 8px; */
+    box-shadow: black 3px 3px;
+    align-self: center;
+}
+
+.start:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.instr {
+    padding: 25px;
+    font-size: large;
+    width: 400px;
+}
+
+.about {
+    max-width: 600px;
+}
+
+.foot {
+    padding: 15px;
+    font-size: medium;
+    width: 400px;
+    text-align: center;
+    border: solid #526c84 1px;
+}
+
+.sq {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: black 3px 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0,0,0,0);
+}
+
+.sq:hover {
+    /* opacity: 75%; */
+    cursor: pointer;
+    box-shadow: none;
+    border: 3px solid white;
+}
+
+.sq2 {
+    color: black;
+}
+
+.sq2:hover {
+    color: white;
+}
+
+.sq3 {
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.min {
+    background-color: brown;
+}
+
+.than {
+    background-color: darkred;
+}
+
+.plus {
+    background-color: sienna
+}
+
+.nill {
+    background-color: darkkhaki;
+}
+
+.circ {
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.starburst {
+  width: 150px; /* adjust to control the size */
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75% 93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7% 75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24% 21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
+  border: 2px black;
+  cursor: pointer;
+}
