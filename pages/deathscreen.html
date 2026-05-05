@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>the normal game</title>
+    <title>GAME OVER - the normal game</title>
     <link rel="stylesheet" href="https://use.typekit.net/iqq5oek.css">
     <link rel="stylesheet" href="../main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="gameReset()">
 
     <div class="header">
         <div class="logo"><a onclick="document.location='../index.html'"><img src="../assets/logo_small.png" alt="The Normal Game logo"></a></div>
         <div class="menu-bar">
-            <button class="hide">..</button>
+            <button class="none">..</button>
             <!-- <button class="help" onclick="document.location='../index.html'">Start Over</button>
             <button class="help" onclick="document.location='help.html'">Hint</button> -->
         </div>
@@ -22,18 +22,25 @@
     </div>
 
     <div class="main">
-        <h2>Choose a difficulty:</h2>
+        <div class="head"><H1>GAME OVER</H2></div>
+
+        <!-- <button class="button" onclick="document.location='difficulty2.html'">Try Again</button> -->
 
         <div class="spacer-small"></div>
-
-        <div class="menu-reverse">
-            <button class="locked"">Easy</button>
-            <button class="button" onclick="document.location='levels/page1.html'">Normal</button>
-            <button class="locked"">Hard</button>
+        <div class="foot">
+            <p>Feeling frustrated? Annoyed?<br>Didn't have a good time?</p>
+            <button class="button" onclick="document.location='about.html'">About</button>
         </div>
-
     </div>
 
+    <script>
+        var delayInMilliseconds = 15000;
+        function gameReset() {
+            setTimeout(function() {
+                document.location="../index.html"
+            }, delayInMilliseconds);
+        }
+    </script>
     
 </body>
 

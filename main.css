@@ -2,13 +2,17 @@
 
 img {max-width: 100%;}
 
-a:hover {
-    cursor: pointer;
-}
+a:hover {cursor: pointer;}
 
 body {
     background-color: #292a4c;
     font-family: argent-pixel-cf, sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    /* padding: 10px; */
 }
 
 .header {
@@ -34,7 +38,18 @@ body {
     opacity: 0;
 }
 
+.remove {
+    display: none;
+}
+
 .menu-bar {
+    display: flex;
+    gap: 15px;
+    height: 30px;
+    flex-direction: row-reverse;
+}
+
+.menu-reverse {
     display: flex;
     gap: 15px;
     height: 30px;
@@ -99,9 +114,19 @@ button {
 }
 
 .button:hover {
+    /* color: white; */
     background-color: lightgray;
     /* box-shadow: none; */
     cursor: pointer;
+}
+
+.locked {
+    padding: 5px 8px;
+    background-color: lightgray;
+    box-shadow: #526c84 3px 3px;
+    outline: none;
+    font-family: argent-pixel-cf, sans-serif;
+    box-shadow: none;
 }
 
 .game {
@@ -111,7 +136,7 @@ button {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .start {
@@ -136,7 +161,23 @@ button {
     width: 400px;
 }
 
+.instr2 {
+    padding: 25px;
+    font-size: large;
+    width: 400px;
+}
+
+.instr3 {
+    padding: 25px;
+    font-size: large;
+    width: 400px;
+}
+
 .about {
+    max-width: 600px;
+}
+
+.about2 {
     max-width: 600px;
 }
 
@@ -146,6 +187,38 @@ button {
     width: 400px;
     text-align: center;
     border: solid #526c84 1px;
+}
+
+.door {
+    background-color: white;
+    height: 300px;
+    width: 200px;
+    border-radius: 50% 50% 0 0;
+    text-align: center;
+    align-content: center;
+}
+
+.key {
+    height: 85px;
+    width: 35px;
+}
+
+.powerup {
+    background-color: white;
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    align-content: center;
+}
+
+.arrow {
+    height: 120px;
+}
+
+.gem {
+    height: 80px;
+    width: 80px;
+    border-radius: 50% 50% 100% 100%;
 }
 
 .sq {

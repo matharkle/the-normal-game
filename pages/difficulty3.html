@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>the normal game</title>
+    <link rel="stylesheet" href="https://use.typekit.net/iqq5oek.css">
+    <link rel="stylesheet" href="../main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo"><a onclick="document.location='../index.html'"><img src="../assets/logo_small.png" alt="The Normal Game logo"></a></div>
+        <div class="menu-bar">
+            <button class="hide">..</button>
+            <!-- <button class="help" onclick="document.location='../index.html'">Start Over</button>
+            <button class="help" onclick="document.location='help.html'">Hint</button> -->
+        </div>
+        <!-- <div>matt christian</div>
+        <div>vcu gdes 2026 capstone</div> -->
+    </div>
+
+    <div class="main">
+        <h2>Choose a difficulty:</h2>
+
+        <div class="spacer-small"></div>
+
+        <div class="menu-reverse">
+            <button class="locked" onclick="easyMessage()">Easy</button>
+            <button class="button" onclick="document.location='levels/page10.html'">Normal</button>
+            <button class="locked" onclick="hardMessage()">Hard</button>
+        </div>
+
+        <div class="spacer-small"></div>
+
+        <div class="about remove">
+            Awww, is someone a little poor baby who wants an easy peasy game?<br>
+            &nbsp;<br>
+            Have you tried just getting good? Ever thought of that?
+        </div>
+
+        <div class="about2 remove">
+            Wooooah there, bucko.<br>
+            &nbsp;<br>
+            'Hard' mode has to be unlocked, and you <i>clearly</i> aren't up for the task.<br>
+        </div>
+
+
+    </div>
+
+    <script>
+
+        var about = document.querySelector(".about");
+        var about2 = document.querySelector(".about2");
+
+
+        function easyMessage() {
+            console.log('it works!');
+            about.classList.remove("remove");
+            about2.classList.add("remove");
+        }
+
+        function hardMessage() {
+            console.log('it works!');
+            about2.classList.remove("remove");
+            about.classList.add("remove");
+        }
+
+    </script>
+    
+</body>
+
+</html>

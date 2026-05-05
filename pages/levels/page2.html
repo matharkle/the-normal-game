@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>my little game</title>
+    <title>level 1 - the normal game</title>
     <link rel="stylesheet" href="https://use.typekit.net/iqq5oek.css">
     <link rel="stylesheet" href="../../main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="assistMode()">
 
     <div class="header">
         <div class="logo"><img src="../../assets/logo_small.png" alt="The Normal Game logo"></div>
@@ -21,25 +21,74 @@
     </div>
 
     <div class="main">
+        <!-- <div class="instr">
+            A strange puzzle blocks your way.<br>
+            Click on the Blorgle square to continue.<br>
+        </div> -->
+
         <div class="instr">
-            Not quite!<br>
-            &nbsp;<br>
-            Let's try that again. <br>
-            Click on the Blorgle (+) square.
+            Um... not that one, the Blorgle one.<br>
+            Here, I'll turn on assist mode for you.
         </div>
+
+        <div class="instr2 remove">
+            Lets try that again!<br>
+            Click on the Blorgle(+) square.
+        </div>
+
         <div class="game">
-            <button class="sq min sq2" onclick="document.location='../gameover.html'">-</button>
-            <button class="sq than sq2" onclick="document.location='../gameover.html'"><</button>
-            <button class="sq plus sq2" onclick="document.location='page3.html'">+</button>
-            <button class="sq nill sq2" onclick="document.location='../gameover.html'">o</button>
+            <button class="sq min" onclick="document.location='../gameover.html'">-</button>
+            <button class="sq than" onclick="document.location='../gameover.html'"><</button>
+            <button class="sq plus" onclick="document.location='page3.html'">+</button>
+            <button class="sq nill" onclick="document.location='../gameover.html'">o</button>
         </div>
-        <div class="instr">
-            &nbsp;<br>
-            &nbsp;<br>
-            &nbsp;<br>
-            &nbsp;
-        </div>
+
+        <!-- <div class="instr3">
+            Um... not that one, the Blorgle one.<br>
+            Here, I'll turn on assist mode for you.
+        </div> -->
+
     </div>
+
+    <script>
+
+        var instr = document.querySelector(".instr")
+        var instr2 = document.querySelector(".instr2")
+        var instr3 = document.querySelector(".instr3")
+
+        var min = document.querySelector(".min")
+        var than = document.querySelector(".than")
+        var plus = document.querySelector(".plus")
+        var nill = document.querySelector(".nill")
+
+        var delayInMilliseconds = 4000;
+
+        function assistMode() {
+
+            // instr3.classList.remove("remove")
+
+            setTimeout(function() {
+
+                min.classList.add("sq2")
+                than.classList.add("sq2")
+                plus.classList.add("sq2")
+                nill.classList.add("sq2")
+
+                instr.classList.add("remove")
+                instr2.classList.remove("remove")
+
+                setTimeout(function() {
+
+                    instr3.classList.add("remove")
+
+            }, delayInMilliseconds);
+
+            }, delayInMilliseconds);
+        }
+
+        // document.querySelector()
+
+    </script>
     
 </body>
 
