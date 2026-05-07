@@ -9,10 +9,16 @@ body {
     font-family: argent-pixel-cf, sans-serif;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    /* padding: 10px; */
+
+
+
+/* PAGE STRUCTURE */
+
+.logo {
+    max-width: 200px;
+    min-width: 100px;
+    height: 70px;
+    padding-top: 10px;
 }
 
 .header {
@@ -27,12 +33,95 @@ body {
     align-items: baseline;
 }
 
-.logo {
-    max-width: 200px;
-    min-width: 100px;
-    height: 70px;
-    padding-top: 10px;
+.main {
+    background-color: #99b9ba;
+    margin: 0px 50px;
+    padding: 100px;
+    padding-top: 200px;
+    height: 80vh;
+    overflow-y: scroll;
+    /* border-radius: 15px; */
+    box-shadow: inset #526c84 3px 3px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
+
+.instr {
+    padding: 25px;
+    font-size: large;
+    width: 400px;
+}
+
+.instr2 {
+    padding: 25px;
+    font-size: large;
+    width: 400px;
+}
+
+.instr3 {
+    padding: 25px;
+    font-size: large;
+    width: 400px;
+}
+
+.game {
+    width: 80vw;
+    max-width: 850px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.items {
+    align-content: center;
+    height: 400px;
+}
+
+.foot {
+    padding: 15px;
+    font-size: medium;
+    width: 400px;
+    text-align: center;
+    border: solid #526c84 1px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding: 10px; */
+}
+
+.spacer {
+    height: 200px;
+}
+
+.spacer-small {
+    height: 100px;
+}
+
+.title {
+    max-height: 40vh;
+}
+
+.about {
+    max-width: 600px;
+}
+
+.about2 {
+    max-width: 600px;
+}
+
+
+
+
+
+
+/* VISIBILITY */
 
 .hide {
     opacity: 0;
@@ -40,6 +129,68 @@ body {
 
 .remove {
     display: none;
+}
+
+.none {
+    background-color: inherit;
+    color: #292a4c;
+}
+
+.sq3 {
+    opacity: 0%;
+    pointer-events: none;
+}
+
+
+
+
+
+
+/* BUTTONS */
+
+button {
+    border: 0;
+}
+
+.button {
+    padding: 5px 8px;
+    background-color: #ffffff;
+    box-shadow: #526c84 3px 3px;
+    outline: none;
+    font-family: argent-pixel-cf, sans-serif;
+    /* height: 26px; */
+}
+
+.button:hover {
+    /* color: white; */
+    background-color: lightgray;
+    /* box-shadow: none; */
+    cursor: pointer;
+}
+
+.start {
+    background-color: white;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 12px;
+    /* border-radius: 8px; */
+    box-shadow: black 3px 3px;
+    align-self: center;
+}
+
+.start:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.locked {
+    padding: 5px 8px;
+    background-color: lightgray;
+    box-shadow: #526c84 3px 3px;
+    outline: none;
+    font-family: argent-pixel-cf, sans-serif;
+    box-shadow: none;
 }
 
 .menu-bar {
@@ -68,158 +219,12 @@ body {
     cursor: pointer;
 }
 
-.main {
-    background-color: #99b9ba;
-    margin: 0px 50px;
-    padding: 100px;
-    padding-top: 200px;
-    height: 80vh;
-    overflow-y: scroll;
-    /* border-radius: 15px; */
-    box-shadow: inset #526c84 3px 3px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
 
-.spacer {
-    height: 200px;
-}
 
-.spacer-small {
-    height: 100px;
-}
 
-.title {
-    max-height: 40vh;
-}
 
-button {
-    border: 0;
-}
 
-.none {
-    background-color: inherit;
-    color: #292a4c;
-}
-
-.button {
-    padding: 5px 8px;
-    background-color: #ffffff;
-    box-shadow: #526c84 3px 3px;
-    outline: none;
-    font-family: argent-pixel-cf, sans-serif;
-    /* height: 26px; */
-}
-
-.button:hover {
-    /* color: white; */
-    background-color: lightgray;
-    /* box-shadow: none; */
-    cursor: pointer;
-}
-
-.locked {
-    padding: 5px 8px;
-    background-color: lightgray;
-    box-shadow: #526c84 3px 3px;
-    outline: none;
-    font-family: argent-pixel-cf, sans-serif;
-    box-shadow: none;
-}
-
-.game {
-    width: 80vw;
-    max-width: 850px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-}
-
-.start {
-    background-color: white;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-    padding: 8px 12px;
-    /* border-radius: 8px; */
-    box-shadow: black 3px 3px;
-    align-self: center;
-}
-
-.start:hover {
-    background-color: lightgrey;
-    cursor: pointer;
-}
-
-.instr {
-    padding: 25px;
-    font-size: large;
-    width: 400px;
-}
-
-.instr2 {
-    padding: 25px;
-    font-size: large;
-    width: 400px;
-}
-
-.instr3 {
-    padding: 25px;
-    font-size: large;
-    width: 400px;
-}
-
-.about {
-    max-width: 600px;
-}
-
-.about2 {
-    max-width: 600px;
-}
-
-.foot {
-    padding: 15px;
-    font-size: medium;
-    width: 400px;
-    text-align: center;
-    border: solid #526c84 1px;
-}
-
-.door {
-    background-color: white;
-    height: 300px;
-    width: 200px;
-    border-radius: 50% 50% 0 0;
-    text-align: center;
-    align-content: center;
-}
-
-.key {
-    height: 85px;
-    width: 35px;
-}
-
-.powerup {
-    background-color: white;
-    height: 200px;
-    width: 150px;
-    text-align: center;
-    align-content: center;
-}
-
-.arrow {
-    height: 120px;
-}
-
-.gem {
-    height: 80px;
-    width: 80px;
-    border-radius: 50% 50% 100% 100%;
-}
+/* SPRITES */
 
 .sq {
     height: 150px;
@@ -252,25 +257,20 @@ button {
     color: white;
 }
 
-.sq3 {
-    opacity: 0%;
-    pointer-events: none;
-}
-
 .min {
-    background-color: brown;
+    background-color: #3d2a29;
 }
 
 .than {
-    background-color: darkred;
+    background-color: #5a3a34;
 }
 
 .plus {
-    background-color: sienna
+    background-color: #7f5239;
 }
 
 .nill {
-    background-color: darkkhaki;
+    background-color: #96694f;
 }
 
 .circ {
@@ -283,7 +283,85 @@ button {
 .starburst {
   width: 150px; /* adjust to control the size */
   aspect-ratio: 1;
-  clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75% 93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7% 75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24% 21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
+  clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75%
+  93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7%
+  75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24%
+  21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
   border: 2px black;
   cursor: pointer;
+}
+
+.door {
+    /* background-color: white; */
+    background-image: url(assets/door.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 300px;
+    /* border-radius: 50% 50% 0 0; */
+    text-align: center;
+    align-content: center;
+}
+
+.key {
+    background-color: transparent;
+    height: 85px;
+    width: 35px;
+    background-image: url(assets/key.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: grab;
+    background-position: center;
+    /* box-shadow: black 20px 20px; */
+}
+
+.powerup {
+    background-color: cyan;
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.arrow {
+    height: 200px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+
+.arrow.one {
+    background-image: url(assets/arrow1.png);
+    rotate: 90deg;
+}
+
+.arrow.two {
+    background-image: url(assets/arrow2.png);
+    rotate: -90deg;
+}
+
+.gem {
+    height: 80px;
+    width: 80px;
+    border-radius: 50% 50% 100% 100%;
+}
+
+.explosion {
+    height: 300px;
+    width: 500px;
+    background-color: orange;
+    font-size: x-large;
+    text-align: center;
+    align-content: center;
+    aspect-ratio: 1;
+    clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75%
+    93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7%
+    75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24%
+    21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
 }

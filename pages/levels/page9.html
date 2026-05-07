@@ -30,11 +30,34 @@
         <div class="game">
             <div class="powerup">powerup</div>
             <div class="game">
-                <button class="arrow" onclick="document.location='page10.html'">arrow</button>
-                <button class="arrow" onclick="document.location='page10.html'">arrow</button>
+                <button class="arrow one">A</button>
+                <button class="arrow two">B</button>
             </div>
         </div>
     </div>
+
+    <script>
+
+        const state = {A: false, B: false};
+
+        addEventListener('click', (e) => {
+
+            const buttonClicked = e.target.innerHTML;
+            state[buttonClicked] = true;
+
+            console.log(Object.values(state));
+
+            if(Object.values(state).includes(false)) {
+                console.log('not all buttons are clicked');
+            } else {
+                console.log('all buttons are clicked');
+                // Do what you got to do here
+                document.location="page10.html";
+            }
+            
+        });
+
+    </script>
     
 </body>
 
