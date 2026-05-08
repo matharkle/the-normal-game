@@ -36,10 +36,10 @@ body {
 .main {
     background-color: #99b9ba;
     margin: 0px 50px;
-    padding: 100px;
+    padding-top: 100px;
     /* padding-top: 200px; */
     height: 80vh;
-    overflow-y: scroll;
+    overflow: hidden;
     /* border-radius: 15px; */
     box-shadow: inset #526c84 3px 3px;
     display: flex;
@@ -71,14 +71,17 @@ body {
     max-width: 850px;
     padding: 10px;
     display: flex;
-    flex-direction: row;
     align-content: center;
     justify-content: space-evenly;
+    /* justify-self: center; */
 }
 
 .items {
-    align-content: center;
     height: 400px;
+    width: fit-content;
+    /* max-width: 700px; */
+    /* justify-content: space-evenly; */
+    align-content: center;
 }
 
 .foot {
@@ -168,6 +171,25 @@ button {
     cursor: pointer;
 }
 
+.locked {
+    padding: 5px 8px;
+    background-color: gray;
+    box-shadow: none;
+    cursor: default;
+    translate: 3px 3px;
+}
+
+.locked:hover {
+    cursor: default;
+    background-color: gray;
+}
+
+.clicked {
+    background-color: gray;
+    box-shadow: none;
+    translate: 3px 3px;
+}
+
 .start {
     font-size: x-large;
     padding: 10px 16px;
@@ -188,15 +210,6 @@ button {
 .start:hover {
     background-color: lightgrey;
     cursor: pointer;
-}
-
-.locked {
-    padding: 5px 8px;
-    background-color: lightgray;
-    box-shadow: #526c84 3px 3px;
-    outline: none;
-    font-family: argent-pixel-cf, sans-serif;
-    box-shadow: none;
 }
 
 .menu-bar {
@@ -323,7 +336,7 @@ button {
 
 .door {
     /* background-color: white; */
-    background-image: url(assets/door.png);
+    background-image: url(assets/door2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,9 +360,14 @@ button {
 }
 
 .powerup {
-    background-color: cyan;
-    height: 200px;
-    width: 150px;
+    /* background-color: cyan; */
+    color: transparent;
+    background-image: url(assets/powerup.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    min-width: 400px;
     text-align: center;
     align-content: center;
     border-radius: 20px;
@@ -386,6 +404,10 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.twice {
     cursor: pointer;
 }
 

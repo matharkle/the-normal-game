@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="inactiveReset(35)">
 
     <div class="header">
         <div class="logo"><img src="../../assets/logo_small.png" alt="The Normal Game logo"></div>
@@ -25,20 +25,24 @@
             Power crystals!<br>
             Click on each gem to absorb its power.<br>
             &nbsp;<br>
-            But be careful. If you click on the same one twice it will explode!
+            But be careful. If you click on the same one <span class="twice" onclick="twiceAudio()">twice</span> it will explode!
         </div>
-        <div class="game">
-            <button class="gem" onclick="document.location='page15.html'">gem</button>
-            <button class="gem" onclick="document.location='page15.html'">gem</button>
-        </div>
-        <div class="game">
-            <button class="gem" onclick="document.location='page15.html'">gem</button>
-            <button class="gem" onclick="document.location='page15.html'">gem</button>
-            <button class="gem" onclick="document.location='page15.html'">gem</button>
+        <div class="items">
+            <div class="game">
+                <button class="gem" onclick="document.location='page15.html'">gem</button>
+                <button class="gem" onclick="document.location='page15.html'">gem</button>
+            </div>
+            <div class="game">
+                <button class="gem" onclick="document.location='page15.html'">gem</button>
+                <button class="gem" onclick="document.location='page15.html'">gem</button>
+                <button class="gem" onclick="document.location='page15.html'">gem</button>
+            </div>
         </div>
         <div class="spacer-small"></div>
         <div class="about">Gems Drained: 3</div>
     </div>
+
+    <script src="../../scripts/main.js"></script>
     
 </body>
 

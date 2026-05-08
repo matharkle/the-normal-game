@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="gameReset(15)">
 
     <div class="header">
         <div class="logo"><a onclick="document.location='../index.html'"><img src="../assets/logo_small.png" alt="The Normal Game logo"></a></div>
@@ -27,9 +27,9 @@
         <div class="spacer-small"></div>
 
         <div class="menu-reverse">
-            <button class="locked" onclick="easyMessage()">Easy</button>
+            <button class="button clicked" onclick="easyMessage()">Easy</button>
             <button class="button" onclick="document.location='levels/page10.html'">Normal</button>
-            <button class="locked" onclick="hardMessage()">Hard</button>
+            <button class="button clicked" onclick="hardMessage()">Hard</button>
         </div>
 
         <div class="spacer-small"></div>
@@ -46,28 +46,9 @@
             'Hard' mode has to be unlocked, and you <i>clearly</i> aren't up for the task.<br>
         </div>
 
-
     </div>
 
-    <script>
-
-        var about = document.querySelector(".about");
-        var about2 = document.querySelector(".about2");
-
-
-        function easyMessage() {
-            console.log('it works!');
-            about.classList.remove("remove");
-            about2.classList.add("remove");
-        }
-
-        function hardMessage() {
-            console.log('it works!');
-            about2.classList.remove("remove");
-            about.classList.add("remove");
-        }
-
-    </script>
+    <script src="../scripts/main.js"></script>
     
 </body>
 

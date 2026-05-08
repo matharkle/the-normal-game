@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="gameReset(20)">
 
     <div class="header">
         <div class="logo"><a onclick="document.location='../index.html'"><img src="../assets/logo_small.png" alt="The Normal Game logo"></a></div>
@@ -27,13 +27,14 @@
         <div class="spacer-small"></div>
 
         <div class="menu-reverse">
-            <button class="locked"">Easy</button>
+            <button class="button locked">Easy</button>
             <button class="button" onclick="document.location='levels/page1.html'">Normal</button>
-            <button class="locked"">Hard</button>
+            <button class="button locked">Hard</button>
         </div>
 
     </div>
 
+    <script src="../scripts/main.js"></script>
     
 </body>
 

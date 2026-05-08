@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="gameReset(20)">
 
     <div class="header">
         <div class="logo"><a onclick="document.location='../index.html'"><img src="../assets/logo_small.png" alt="The Normal Game logo"></a></div>
@@ -28,27 +28,19 @@
             &nbsp;<br>
             Honestly, should you even be playing this game? Even a baby could do it.
         </div>
-        <div class="game">
-            <!-- <button class="circ" onclick="document.location='page6.html'"></button>
-            <button class="circ" onclick="document.location='page6.html'"></button>
-            <button class="circ" onclick="document.location='page6.html'"></button> -->
-        </div>
-        <div class="game">
-            <!-- <button class="circ" onclick="document.location='page6.html'"></button>
-            <button class="circ" onclick="document.location='page6.html'"></button> -->
-        </div>
+
+        <div class="game"></div>
+        <div class="game"></div>
         <button class="button" onclick="history.back()">Go Back</button>
 
-        <!-- <div class="menu-bar">
-            <button class="button" onclick="history.back()">Go Back</button>
-            <button class="button" onclick="document.location='about.html'">About</button>
-        </div> -->
         <div class="spacer"></div>
         <div class="foot">
             <p>Feeling frustrated? Annoyed?<br>Not having a good time?</p>
             <button class="button" onclick="document.location='about.html'">About</button>
         </div>
     </div>
+
+    <script src="../scripts/main.js"></script>
     
 </body>
 
