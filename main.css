@@ -37,7 +37,7 @@ body {
     background-color: #99b9ba;
     margin: 0px 50px;
     padding: 100px;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     height: 80vh;
     overflow-y: scroll;
     /* border-radius: 15px; */
@@ -169,14 +169,20 @@ button {
 }
 
 .start {
-    background-color: white;
+    font-size: x-large;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    box-shadow: #526c84 3px 3px;
+    outline: none;
+    font-family: argent-pixel-cf, sans-serif;
+    /* background-color: white;
     text-align: center;
     width: fit-content;
     height: fit-content;
     padding: 8px 12px;
     /* border-radius: 8px; */
-    box-shadow: black 3px 3px;
-    align-self: center;
+    /* box-shadow: black 3px 3px;
+    align-self: center; */
 }
 
 .start:hover {
@@ -275,7 +281,7 @@ button {
 
 .circ {
     width: 100px;
-    height: 100px;
+    height: 175px;
     border-radius: 40%;
     cursor: pointer;
     background-size: contain;
@@ -293,11 +299,15 @@ button {
 }
 
 .friend3 {
-    background-image: url(assets/friend2.png);
+    background-image: url(assets/friend1.png);
+    transform: scaleX(-1);
 }
 
 .bad-guy {
     background-image: url(assets/bad-guy.png);
+    height: 175px;
+    width: 120px;
+    transform: scaleX(1);
 }
 
 .starburst {

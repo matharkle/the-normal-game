@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="attackTimer()">
 
     <div class="header">
         <div class="logo"><img src="../../assets/logo_small.png" alt="The Normal Game logo"></div>
@@ -22,27 +22,47 @@
 
     <div class="main">
         <div class="instr">
-            No silly, give it another go.<br>
+            No! You're running out of time!<br>
             &nbsp;<br>
-            Click on the Bad Guy to stop them!<br>
             Quickly!<br>
+            Click on the Bad Guy to stop them!<br>
             &nbsp;
         </div>
         <div class="game">
             <button class="circ friend" onclick="document.location='../gameover.html'"></button>
             <button class="circ friend2" onclick="document.location='../gameover.html'"></button>
-            <button class="circ friend 3" onclick="document.location='../gameover.html'"></button>
+            <button class="circ friend2" onclick="document.location='../gameover.html'"></button>
         </div>
         <div class="game">
             <button class="circ friend2" onclick="document.location='../gameover.html'"></button>
-            <button class="circ bad-guy" onclick="document.location='page6.html'"></button>
+            <button class="circ friend3" onclick="document.location='page6.html'"></button>
         </div>
-        <div class="instr">
-            &nbsp;<br>
-            &nbsp;<br>
-            &nbsp;<br>
-        </div>
+        <div class="spacer-small"></div>
+        <button class="button" onclick="assistMode()">Assist Mode</button>
     </div>
+
+    <script>
+
+        var delayInMilliseconds = 5000;
+
+        function attackTimer() {
+
+            setTimeout(function() {
+
+                document.location="../gameover.html"
+
+            }, delayInMilliseconds);
+        }
+
+        var devil = document.querySelector(".friend3")
+
+        function assistMode() {
+
+            devil.classList.toggle("bad-guy")
+
+        }
+
+    </script>
     
 </body>
 

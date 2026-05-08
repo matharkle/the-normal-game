@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="attackTimer()">
 
     <div class="header">
         <div class="logo"><img src="../../assets/logo_small.png" alt="The Normal Game logo"></div>
@@ -23,25 +23,30 @@
     <div class="main">
         <div class="instr">
             Oh no, we're under attack!<br>
-            You need to save your Friends.<br>
+            You need to save your Friends!<br>
             &nbsp;<br>
-            Quick, click on the Bad Guy to stop them!
+            Quick!<br>
+            Click on the Bad Guy to stop them!
         </div>
         <div class="game">
-            <button class="circ friend" onclick="document.location='page5.html'"></button>
             <button class="circ friend2" onclick="document.location='page5.html'"></button>
+            <button class="circ friend" onclick="document.location='page5.html'"></button>
+        </div>
+        <div class="game">
             <button class="circ friend3" onclick="document.location='page5.html'"></button>
-        </div>
-        <div class="game">
             <button class="circ friend2" onclick="document.location='page5.html'"></button>
-            <button class="circ friend" onclick="document.location='page5.html'"></button>
-        </div>
-        <div class="instr">
-            &nbsp;<br>
-            &nbsp;<br>
-            &nbsp;<br>
+            <button class="circ friend2" onclick="document.location='page5.html'"></button>
         </div>
     </div>
+
+    <script>
+        var delayInMilliseconds = 5000;
+        function attackTimer() {
+            setTimeout(function() {
+                document.location="../gameover.html"
+            }, delayInMilliseconds);
+        }
+    </script>
     
 </body>
 

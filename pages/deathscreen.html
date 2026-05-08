@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body onload="gameReset()">
+<body onload="gameReset(10)">
 
     <div class="header">
         <div class="logo"><a onclick="document.location='../index.html'"><img src="../assets/logo_small.png" alt="The Normal Game logo"></a></div>
@@ -34,11 +34,11 @@
     </div>
 
     <script>
-        var delayInMilliseconds = 15000;
-        function gameReset() {
+        // var delayInMilliseconds = 10000;
+        function gameReset(timeout) {
             setTimeout(function() {
                 document.location="../index.html"
-            }, delayInMilliseconds);
+            }, timeout*1000);
         }
     </script>
     
